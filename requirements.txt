@@ -1,6 +1,6 @@
 fastapi
 uvicorn[standard]
-tensorflow-cpu==2.15.1
+tensorflow-cpu==2.16.2
 numpy==1.26.4
 Pillow
 SQLAlchemy
