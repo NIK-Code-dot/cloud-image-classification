@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+tensorflow==2.21.0
+numpy==2.2.6
+Pillow
+SQLAlchemy
+psycopg2-binary
+python-multipart
