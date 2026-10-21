@@ -37,3 +37,13 @@ airflow/logs/*
 # OS
 .DS_Store
 Thumbs.db
+
+# Local installer packages
+*.deb
+
+# Secrets and credentials
+.env.*
+!.env.example
+
+# ML artifacts
+artifacts/
