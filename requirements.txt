@@ -1,7 +1,7 @@
 fastapi
 uvicorn[standard]
-tensorflow==2.21.0
-numpy==2.2.6
+tensorflow-cpu==2.15.1
+numpy==1.26.4
 Pillow
 SQLAlchemy
 psycopg2-binary
