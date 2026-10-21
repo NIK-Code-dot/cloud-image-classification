@@ -1053,7 +1053,7 @@
             console.error(error);
 
             showError(
-                "Unable to connect to the AI API. Make sure FastAPI is running on port 8000."
+                "Prediction error: " + error.message + ""
             );
 
         } finally {
