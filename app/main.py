@@ -4,7 +4,7 @@ from app.ml_model import predict_image
 from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 
-from app.services.database import get_db
+from app.services.database import engine, Base, get_db
 from app.models import Image, Prediction
 from app.schemas import ImageCreate, ImageResponse
 
@@ -13,6 +13,7 @@ app = FastAPI(
     description="Cloud-based Image Classification Project",
     version="1.0.0"
 )
+Base.metadata.create_all(bind=engine)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://127.0.0.1:5500", "http://localhost:5500"],
